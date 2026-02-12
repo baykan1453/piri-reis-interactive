@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("image/48b2f6bd-2ae9-4fbe-9d03-92510c3d6000\ \(1\).jpg"); /* Arka plan resmini buraya ekleyin */
+            background-size: cover; /* Resmin ekran boyutuna sığması için */
+            background-repeat: no-repeat; /* Tekrar etmemesi için */
+            height: 100vh; /* Ekranın tamamını kaplaması için */
+            margin: 0; /* Sayfa kenarlarının boşluğunu kaldırmak için */
+            padding: 0; /* Sayfa içeriğinin boşluğunu kaldırmak için */
+            font-family: Arial, sans-serif; /* Yazı tipini ayarlamak için */
+            display: flex; /* İçerikleri dikey ve yatay ortalamak için */
+            justify-content: center; /* Yatayda ortalamak için */
+            align-items: center; /* Dikeyde ortalamak için */
+        }
+
+        .kutu {
+            position: relative; /* İçeriğin göreli konumda olmasını sağlar */
+            width: 600px; /* Kutunun genişliği */
+            height: 400px; /* Kutunun yüksekliği */
+            background-color: rgba(255, 255, 255, 0.486); /* Arkaplan rengi ve opaklık */
+            border-radius: 15px; /* Yumuşak kenarlar için */
+            padding: 20px; /* İçeriğin kenarlara olan uzaklığı */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Kutuya gölgelendirme efekti */
+            text-align: center; /* İçerikleri ortalamak için */
+        }
+
+        .exit-button {
+            position: absolute; /* Butonun mutlak konumda olmasını sağlar */
+            top: -35px; /* Yukarıdan 10 piksel mesafe */
+            right: -35px; /* Sağdan 10 piksel mesafe */
+            display: flex; /* İçeriğin yatay hizalanması için */
+            align-items: center; /* İçeriğin dikey hizalanması için */
+            justify-content: center; /* İçeriğin yatayda merkezlenmesi için */
+            background-color: #0000004f; /* Butonun arka plan rengi */
+            color: #fff; /* Butonun metin rengi */
+            border: none; /* Buton kenarlığını kaldırır */
+            border-radius: 50%; /* Daire şeklinde kenarlar */
+            width: 40px; /* Butonun genişliği */
+            height: 40px; /* Butonun yüksekliği */
+            font-size: 30px; /* Metin boyutu */
+            cursor: pointer; /* Üzerine gelindiğinde imleci el şekline dönüştürür */
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <!-- Kutunun içeriği buraya gelecek -->
+        <p>This part shows which part of the map is drawn
+            Narrate: A map like this map, in this century
+            no one has it. This is a foundation because of the depiction of the poor
+            formed. Twenty maps and the time of Alexander the Great
+            eight of the maps drawn - which show that the world is
+            shows the inhabited areas and the Arabs
+            Caferiye der-From a map of India of the Arabs
+            and what the Portuguese draw in our time
+            from four maps of Asia and Columbus's
+            I used the map he drew. These
+            Comparatively examining and making inferences
+            I discovered this map.</p>
+        <button class="exit-button" id="exit-button">X</button>
+    </div>
+
+    <script>
+        document.getElementById("exit-button").addEventListener("click", function() {
+            window.location.href = "index2i.html";
+        });
+    </script>
+</body>
+</html>

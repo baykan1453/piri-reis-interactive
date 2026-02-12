@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("image/48b2f6bd-2ae9-4fbe-9d03-92510c3d6000\ \(1\).jpg"); /* Arka plan resmini buraya ekleyin */
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .kutu {
+            position: relative; /* İçeriğin göreli konumda olmasını sağlar */
+            width: 400px; /* Kutunun genişliği */
+            height: 300px; /* Kutunun yüksekliği */
+            background-color: rgba(255, 255, 255, 0.486); /* Arkaplan rengi ve opaklık */
+            border-radius: 15px; /* Yumuşak kenarlar için */
+            padding: 20px; /* İçeriğin kenarlara olan uzaklığı */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Kutuya gölgelendirme efekti */
+            text-align: center; /* İçerikleri ortalamak için */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Butonlar arasındaki boşluk */
+            margin-top: 20px; /* Kutunun üstündeki boşluk */
+            justify-content: center; /* Butonları yatayda ortala */
+            align-items: center; /* Butonları dikeyde ortala */
+        }
+
+        .language-button {
+            width: 200px;
+            height: 75px;
+            background-color: #00000033;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none; /* Metin alt çizgisini kaldır */
+        }
+
+        .language-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <div class="button-container">
+            <a href="index.html" class="language-button">Türkçe</a>
+            <a href="indexi.html" class="language-button">English</a>
+            <a href="indexa.html" class="language-button">عربي</a>
+        </div>
+    </div>
+</body>
+</html>

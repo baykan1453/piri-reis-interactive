@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("image/48b2f6bd-2ae9-4fbe-9d03-92510c3d6000\ \(1\).jpg"); /* Arka plan resmini buraya ekleyin */
+            background-size: cover; /* Resmin ekran boyutuna sığması için */
+            background-repeat: no-repeat; /* Tekrar etmemesi için */
+            height: 100vh; /* Ekranın tamamını kaplaması için */
+            margin: 0; /* Sayfa kenarlarının boşluğunu kaldırmak için */
+            padding: 0; /* Sayfa içeriğinin boşluğunu kaldırmak için */
+            font-family: Arial, sans-serif; /* Yazı tipini ayarlamak için */
+            display: flex; /* İçerikleri dikey ve yatay ortalamak için */
+            justify-content: center; /* Yatayda ortalamak için */
+            align-items: center; /* Dikeyde ortalamak için */
+        }
+
+        .kutu {
+            top: 150px;
+            position: relative; /* İçeriğin göreli konumda olmasını sağlar */
+            width: 600px; /* Kutunun genişliği */
+            height: 735px; /* Kutunun yüksekliği */
+            background-color: rgba(255, 255, 255, 0.486); /* Arkaplan rengi ve opaklık */
+            border-radius: 15px; /* Yumuşak kenarlar için */
+            padding: 20px; /* İçeriğin kenarlara olan uzaklığı */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Kutuya gölgelendirme efekti */
+            text-align: center; /* İçerikleri ortalamak için */
+        }
+
+        .exit-button {
+            position: absolute; /* Butonun mutlak konumda olmasını sağlar */
+            top: -35px; /* Yukarıdan 10 piksel mesafe */
+            right: -35px; /* Sağdan 10 piksel mesafe */
+            display: flex; /* İçeriğin yatay hizalanması için */
+            align-items: center; /* İçeriğin dikey hizalanması için */
+            justify-content: center; /* İçeriğin yatayda merkezlenmesi için */
+            background-color: #0000004f; /* Butonun arka plan rengi */
+            color: #fff; /* Butonun metin rengi */
+            border: none; /* Buton kenarlığını kaldırır */
+            border-radius: 50%; /* Daire şeklinde kenarlar */
+            width: 40px; /* Butonun genişliği */
+            height: 40px; /* Butonun yüksekliği */
+            font-size: 30px; /* Metin boyutu */
+            cursor: pointer; /* Üzerine gelindiğinde imleci el şekline dönüştürür */
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <!-- Kutunun içeriği buraya gelecek -->
+        <p> It tells how these shores and the island were found:
+            These coasts are called Antilya (America) coasts.
+            It was built by a Genoese named Columbus in 1491.
+            has been discovered. Columbus found a book.
+            In the book, the Maghreb Sea (Atlantic Ocean)
+            Finally, coasts, islands, various mines and precious
+            It was written that there were mountains with stones. Columbus,
+            After reading the book, I took the matter to Genoese forward.
+            to tell the people who came and ask them to reach there.
+            He wanted two ships. However, the Genoese, Atlas
+            They believe that the ocean has no end
+            and Columbus because they found the ocean dangerous
+            He refused. After all, the Lord of Spain attacked Columbus with a gun.
+            He gave two ships equipped with them and sailed them to the Atlantic Ocean.
+            sent. The late Kemal Reis was a Spanish
+            He had a crew.He went to America three times with Columbus
+            This crew member told Kemal Reis about their experiences as follows:
+            narrated: “First we arrived at the Septe Strait. From there
+            When we travel 4000 miles with the direction we determined from the compass
+            An island appeared before us. More and more of the sea
+            The wave subsided and calmed down. We anchored on this island.
+            The people of the island came and started shooting arrows at us.
+            So we went ashore and asked which island this was.
+            We left without asking. Columbus is just another island
+            saw; We anchored there and stayed for ten days. of the island
+            When the people saw that no harm came from us, they
+            He hunted it and brought it to us in boats. We tell them too
+            We gave glass beads. In the book Columbus read
+            It was written that glass beads were valued in that land.
+            When the people saw the bead, they started to bring more fish.
+            started. One day, the people of the ship were holding a woman on someone's arm.
+            He saw a golden bracelet. Take it and give beads in return
+            They gave us gold and told the islanders: "Bring us gold and we will give you
+            "Let's give more beads," they said. They also go
+            brought more gold. It turns out that in their mountains
+            There was a gold mine. One day, someone from the island
+            They saw a pearl in his hand. Take the pearl and replace it with beads
+            They gave. A pearl two fathoms from the shore of the island
+            was found. After all, they brought two people from that island with them.
+            They took him to the Bey of Spain. "This is Columbus
+            Since he did not know the language of the people, he communicated with signs.
+            After this expedition, the Bey of Spain went to America.
+            He sent a priest and barley. The people of the island have a certain
+            He had no religion. He didn't know agriculture either. So that they
+            They taught them their own religion and agriculture. Now
+            These lands have been completely conquered and known.
+            Columbus gave the place names on the coast. columbus
+            He was a great astronomer. Coasts on this map
+            and the islands are taken from Columbus' Map. The people of the island have a certain
+            He had no religion. He didn't know agriculture either. So that they
+            They taught them their own religion and agriculture. Now
+            These lands have been completely conquered and known.
+            Columbus gave the place names on the coast. columbus
+            He was a great astronomer. Coasts on this map
+            and the islands are taken from Columbus' Map.</p>
+        <button class="exit-button" id="exit-button">X</button>
+    </div>
+
+    <script>
+        document.getElementById("exit-button").addEventListener("click", function() {
+            window.location.href = "index2i.html";
+        });
+    </script>
+</body>
+</html>

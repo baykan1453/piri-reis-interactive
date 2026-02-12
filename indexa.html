@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piri Reis Haritası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS dosyasını ekleyin -->
+
+    <style>
+        body {
+            background-image: url("image/48b2f6bd-2ae9-4fbe-9d03-92510c3d6000\ \(1\).jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* İçerikleri dikey olarak düzenle */
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Metni yatay olarak ortala */
+            position: relative; /* Mutlak konumlandırma için */
+        }
+        
+        h1 {
+            color: white; /* Metin rengi beyaz */
+            font-size: 72px; /* Yazı boyutunu artırdık */
+            font-weight: 300; /* Yazı fontunu incelttik */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Metin gölgesi */
+            margin-bottom: 50px; /* Yazıyı biraz aşağıya taşıdık */
+            z-index: 1; /* Diğer içeriklerden üstte olması için */
+        }
+        
+        .start-button {
+            width: 300px; /* Buton genişliği */
+            height: 150px; /* Buton yüksekliği */
+            border-radius: 75px/37.5px; /* X ve Y eksenlerinde farklı yarıçaplar belirleyerek oval şekil oluştur */
+            background-color: transparent; /* Arkaplan rengi şeffaf */
+            color: white; /* Metin rengi */
+            font-size: 36px; /* Yazı boyutu */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease, opacity 0.3s ease; /* Arka plan rengi ve opaklık geçişi */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Metin gölgesi */
+            border: 1px solid #000000; /* Turkuaz renkte çizgi */
+            padding: 0; /* İç kenar boşluğu (sıfıra eşitle) */
+            border-width: 0.5px; /* Çizgi kalınlığı */
+            opacity: 1; /* Başlangıçta tamamen opak */
+            position: relative; /* Mutlak konumlandırma için */
+            z-index: 1; /* Diğer içeriklerden üstte olması için */
+        }
+
+        .start-button:hover {
+            background-color: rgba(0, 0, 0, 0.205); /* Butona fare geldiğinde arka plan rengini %20 saydam turkuaz yap */
+            opacity: 0.8; /* Fare butona geldiğinde %20 azaltılmış opaklık */
+        }
+
+        .ship-icon {
+            position: absolute; /* Mutlak konumlandırma için */
+            bottom: 500px; /* Alttan 20 piksel mesafe */
+            left: 50%; /* Genişliğin yarısı kadar sağda */
+            transform: translateX(-50%); /* Yatayda merkezlemek için */
+            font-size: 100px; /* İkon boyutu */
+            color: rgb(0, 0, 0); /* İkon rengi (tamamen opak beyaz) */
+            z-index: 0; /* Piri Reis Haritası'nın altında olması için */
+        }
+
+        .language-button {
+            position: absolute; /* Mutlak konumlandırma için */
+            bottom: 100px; /* Alttan 100 piksel mesafe */
+            left: 50%; /* Genişliğin yarısı kadar sağda */
+            transform: translateX(-50%); /* Yatayda merkezlemek için */
+            background-color: transparent; /* Arkaplan rengi şeffaf */
+            color: white; /* Metin rengi */
+            font-size: 24px; /* Yazı boyutu */
+            text-decoration: none; /* Metin alt çizgisini kaldır */
+            border: none; /* Kenarlık olmadan */
+            cursor: pointer; /* Üzerine gelindiğinde imleci el şekline dönüştür */
+            z-index: 1; /* Diğer içeriklerden üstte olması için */
+        }
+    </style>
+</head>
+<body>
+    <h1>خريطة بيري ريس</h1>
+    <a href="index2a.html" class="start-button">يبدأ</a>
+    <i class="fas fa-ship ship-icon"></i>
+    <button class="language-button" onclick="window.location.href = 'diller.html'">اللغات <i class="fas fa-globe"></i></button>
+</body>
+</html>

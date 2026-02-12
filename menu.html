@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<style>
+  body {
+    background-image: url("image/48b2f6bd-2ae9-4fbe-9d03-92510c3d6000\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey olarak düzenle */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Metni yatay olarak ortala */
+    position: relative; /* Mutlak konumlandırma için */
+  }
+
+  /* Yuvarlak stilini tanımla */
+  .yuvarlak {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%; /* Yuvarlak şekil için */
+    position: absolute; /* Mutlak konumlandırma */
+    top: 100px; /* Üst kenara mesafe */
+  }
+
+  /* Yuvarlağın içindeki resmin boyutunu ayarla */
+  .yuvarlak img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi yuvarlağın boyutlarına sığdır */
+    border-radius: 50%; /* Resmi de yuvarlak şekline getir */
+  }
+
+  /* Buton stili */
+  .button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px; /* Kenarları yumuşat */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Yuvarlak div -->
+<div class="yuvarlak">
+  <!-- Resmi yuvarlak içine yerleştir -->
+  <img src="image/Piri-Reis-photoaidcom-cropped.jpg" alt="Yuvarlak İçinde Resim">
+</div>
+  
+<!-- Butonlar -->
+<button class="button"></button>
+<button class="button"></button>
+<button class="button">Çıkış</button>
+
+</body>
+</html>
